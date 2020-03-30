@@ -621,7 +621,7 @@ class CausalImpact(object):
 
     def plot(self, panels=["original", "pointwise", "cumulative"]):
         plt = get_matplotlib()
-        plt.figure(figsize=(15, 12))
+        _fig = plt.figure(figsize=(15, 12))
 
         data_inter = self.params["pre_period"][1]
         inferences = self.inferences.iloc[1:, :]
@@ -697,4 +697,4 @@ class CausalImpact(object):
 
             plt.title('Cumulative Impact')
         plt.xlabel('$T$')
-        return plt
+        return _fig
