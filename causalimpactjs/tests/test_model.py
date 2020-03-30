@@ -7,11 +7,11 @@ import numpy as np
 from numpy.testing import assert_array_equal
 import pandas as pd
 
-import causalimpact
+import causalimpactjs
 
-observations_validate = causalimpact.model.observations_ill_conditioned
-construct_model = causalimpact.model.construct_model
-model_fit = causalimpact.model.model_fit
+observations_validate = causalimpactjs.model.observations_ill_conditioned
+construct_model = causalimpactjs.model.construct_model
+model_fit = causalimpactjs.model.model_fit
 
 
 def test_raises_when_y_is_None():

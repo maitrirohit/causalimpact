@@ -8,9 +8,9 @@ from pandas.testing import assert_series_equal
 from statsmodels.tsa.statespace.structural import UnobservedComponents
 from statsmodels.tsa.arima_process import ArmaProcess
 
-import causalimpact
+import causalimpactjs
 
-compile_posterior = causalimpact.inferences.compile_posterior_inferences
+compile_posterior = causalimpactjs.inferences.compile_posterior_inferences
 np.random.seed(1)
 
 

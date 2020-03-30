@@ -12,7 +12,7 @@ import pandas as pd
 from pandas.testing import assert_frame_equal
 from numpy.testing import assert_array_equal
 from statsmodels.tsa.statespace.structural import UnobservedComponents as UCM
-from causalimpact import CausalImpact
+from causalimpactjs import CausalImpact
 
 
 @pytest.fixture()

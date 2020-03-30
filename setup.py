@@ -23,13 +23,13 @@ if sys.version_info[:2] < (2, 6):
     sys.exit(-1)
 
 
-packages = ["causalimpact", "causalimpact.tests"]
+packages = ["causalimpactjs", "causalimpactjs.tests"]
 
 # add the tests
-package_data = {'causalimpact': ['tests/*.py']}
+package_data = {'causalimpactjs': ['tests/*.py']}
 
 config = {
-    'name': 'causalimpact',
+    'name': 'causalimpactjs',
     'description': 'Python Package for causal inference using Bayesian\
                     structural time-series models',
     'author': 'Jamal Senouci',
@@ -37,7 +37,7 @@ config = {
     'download_url': 'https://pypi.python.org/pypi/causalimpact/',
     'version': '0.1.6',
     'platforms': ['Linux', 'Mac OSX', 'Windows', 'Unix'],
-    'install_requires': ['numpy >= 1.10.0', 'pandas>= 1.0.0', 'statsmodels == 0.11.0'],
+    'install_requires': ['numpy >= 1.10.0', 'pandas< 1.0.0', 'statsmodels == 0.11.0'],
     'packages': ['CausalImpact'],
     'test_suite': 'nose.collector',
     'tests_require': ['nose>=0.10.1'],

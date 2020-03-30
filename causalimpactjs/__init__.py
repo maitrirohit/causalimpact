@@ -6,5 +6,5 @@ see https://github.com/google/CausalImpact
 
 """
 
-from causalimpact.analysis import CausalImpact  # noqa
-from causalimpact.tests.test import run as test  # noqa
+from causalimpactjs.analysis import CausalImpact  # noqa
+from causalimpactjs.tests.test import run as test  # noqa
