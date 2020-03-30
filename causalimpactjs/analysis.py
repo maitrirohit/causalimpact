@@ -2,13 +2,13 @@ import numpy as np
 import pandas as pd
 from pandas.api.types import is_list_like
 
-from causalimpact.misc import (
+from causalimpactjs.misc import (
     standardize_all_variables,
     df_print,
     get_matplotlib
 )
-from causalimpact.model import construct_model, model_fit
-from causalimpact.inferences import compile_posterior_inferences
+from causalimpactjs.model import construct_model, model_fit
+from causalimpactjs.inferences import compile_posterior_inferences
 
 
 class CausalImpact(object):

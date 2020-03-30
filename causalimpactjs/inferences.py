@@ -1,6 +1,6 @@
 import numpy as np
 import pandas as pd
-from causalimpact.misc import unstandardize
+from causalimpactjs.misc import unstandardize
 
 
 def compile_posterior_inferences(results, data, df_pre, df_post,
