@@ -351,7 +351,7 @@ class CausalImpact(object):
         self.inferences = inferences["series"]
         self.model = fitted_model
 
-    def summary(self, output="summary", width=120, path=None):
+    def summary(self, output="report", width=120, path=None):
         import textwrap
         import scipy.stats as st
 
@@ -614,6 +614,7 @@ class CausalImpact(object):
                            be spurious and would generally not be considered
                            statistically significant.""".format()
             '''
+            return stmt+stmt2+stmt3+stmt4
         else:
             raise ValueError("Output argument must be either 'summary' " +
                              "or 'report'")
@@ -696,4 +697,4 @@ class CausalImpact(object):
 
             plt.title('Cumulative Impact')
         plt.xlabel('$T$')
-        plt.show()
+        return plt
