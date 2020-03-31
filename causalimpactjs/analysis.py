@@ -594,13 +594,13 @@ class CausalImpact(object):
                            variables do not correlate well with the response
                            variable during the learning period.""")
 
-            print(textwrap.fill(stmt, width=width))
-            print("\n")
-            print(textwrap.fill(stmt2, width=width))
-            print("\n")
-            print(textwrap.fill(stmt3, width=width))
-            print("\n")
-            print(textwrap.fill(stmt4, width=width))
+            # print(textwrap.fill(stmt, width=width))
+            # print("\n")
+            # print(textwrap.fill(stmt2, width=width))
+            # print("\n")
+            # print(textwrap.fill(stmt3, width=width))
+            # print("\n")
+            # print(textwrap.fill(stmt4, width=width))
             '''
             if (p < summary.alpha[1]):
                 stmt += """\n\nThe probability of obtaining this effect by
