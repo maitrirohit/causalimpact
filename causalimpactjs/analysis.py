@@ -346,7 +346,7 @@ class CausalImpact(object):
             post_period_response)
 
         self.params["pre_period"] = [0, obs_inter - 1]
-        self.params["post_period"] = [obs_inter, -1]
+        self.params["post_period"] = [obs_inter, fitted_model.model.nobs - 1]
         self.data = pd.concat([df_pre, post_period_response])
         self.inferences = inferences["series"]
         self.model = fitted_model
