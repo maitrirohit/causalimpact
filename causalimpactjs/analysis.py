@@ -346,7 +346,7 @@ class CausalImpact(object):
             post_period_response)
 
         self.params["pre_period"] = [0, obs_inter - 1]
-        self.params["post_period"] = [obs_inter, -1]
+        self.params["post_period"] = [obs_inter, fitted_model.model.nobs - 1]
         self.data = pd.concat([df_pre, post_period_response])
         self.inferences = inferences["series"]
         self.model = fitted_model
@@ -510,7 +510,7 @@ class CausalImpact(object):
                     the intervention not taken place, we would have expected
                     a sum of {cum_resp}. The {confidence} interval of this
                     prediction is [{cum_pred_lower}, {cum_pred_upper}]
-                    """.format(cum_resp=cum_resp_fmt,
+                    """.format(cum_resp=cum_pred_fmt,
                                confidence=confidence,
                                cum_pred_lower=cum_lower_fmt,
                                cum_pred_upper=cum_upper_fmt))
